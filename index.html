@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Virtual Deck of Cards with CRUD</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎴 Virtual Deck of Cards</h1>
+
+    <div class="buttons">
+  <button id="shuffle-btn" aria-label="Shuffle a new deck">Shuffle New Deck</button>
+
+  <label for="card-count" style="color:#ddd; font-weight:600; margin-left:10px; margin-right:6px;">Draw:</label>
+  <select id="card-count" aria-label="Number of cards to draw">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+
+  <button id="draw-btn" aria-label="Draw cards" disabled>Draw Card(s)</button>
+
+  <button id="reset-btn" aria-label="Reset the board">Reset Board</button>
+    </div>
+
+
+    <div id="card-area"></div>
+    <p id="message"></p>
+
+    <h2>🗃️ My Card Collection</h2>
+    <div id="collection-area"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
