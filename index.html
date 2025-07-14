@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8" />
-  <title>Virtual Deck of Cards with CRUD</title>
+  
+  <title>Virtual Deck of Cards</title>
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <div class="container">
     <h1>🎴 Virtual Deck of Cards</h1>
 
     <div class="buttons">
-  <button id="shuffle-btn" aria-label="Shuffle a new deck">Shuffle New Deck</button>
+      
+      <!-- Button to shuffle the deck and create a new deck -->
+      <button id="shuffle-btn" aria-label="Shuffle a new deck">Shuffle New Deck</button>
 
-  <label for="card-count" style="color:#ddd; font-weight:600; margin-left:10px; margin-right:6px;">Draw:</label>
-  <select id="card-count" aria-label="Number of cards to draw">
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-  </select>
+      <!-- Label for the dropdown that lets the user select how many cards to draw -->
+      <label for="card-count" style="color:#ddd; font-weight:600; margin-left:10px; margin-right:6px;">
+        Draw:
+      </label>
+      
+      <!-- Dropdown for selecting the number of cards to draw (from 1 to 5) -->
+      <select id="card-count" aria-label="Number of cards to draw">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
 
-  <button id="draw-btn" aria-label="Draw cards" disabled>Draw Card(s)</button>
+      <!-- Button for drawing the selected number of cards (disabled until the deck is shuffled) -->
+      <button id="draw-btn" aria-label="Draw cards" disabled>Draw Card(s)</button>
 
-  <button id="reset-btn" aria-label="Reset the board">Reset Board</button>
+      <!-- Button to reset the board and collection -->
+      <button id="reset-btn" aria-label="Reset the board">Reset Board</button>
     </div>
 
-
     <div id="card-area"></div>
+    
     <p id="message"></p>
 
+    <!-- Section for displaying the user's card collection -->
     <h2>🗃️ My Card Collection</h2>
     <div id="collection-area"></div>
+
   </div>
 
+  <!-- Link to the external JavaScript file for functionality -->
   <script src="script.js"></script>
+
 </body>
 </html>
