@@ -1,3 +1,5 @@
+//To display content with focus, the layout is arranged inside a central container.
+
 /* Reset and base */
 * {
   box-sizing: border-box;
