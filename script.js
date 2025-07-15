@@ -121,3 +121,6 @@ function resetBoard() {
 function setMessage(msg) {
   messageP.textContent = msg;
 }
+
+
+// Draw cards using the selected number from dropdown
